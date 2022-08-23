@@ -11,12 +11,12 @@
 8. type the code in nano editor
   
 
-    import requests
+                import requests
 
 
 
-    def get_random_quote():
-	try:
+                def get_random_quote():
+	        try:
 		
 		response = requests.get("https://quote-garden.herokuapp.com/api/v3/quotes/random")
 		if response.status_code == 200:
@@ -28,11 +28,11 @@
 			print(data[0]['quoteText'])
 		else:
 			print("Error while getting quote")
-	except:
+	        except:
 		print("Something went wrong! Try Again!")
 
 
-get_random_quote()
+                get_random_quote()
 
   
 9. press ctr+q , Y and Enter 
